@@ -1,0 +1,3 @@
+# Academic
+
+Page for academics.
