@@ -179,7 +179,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-26 11:00:37" itemprop="dateModified" datetime="2020-04-26T11:00:37+08:00">2020-04-26</time>
+                <time title="Modified: 2020-04-26 11:05:27" itemprop="dateModified" datetime="2020-04-26T11:05:27+08:00">2020-04-26</time>
               </span>
 
           
@@ -209,11 +209,16 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 <h2 id="math-equation">Math Equation</h2>
 <p><span class="math display">\[ E=mc^2 \]</span></p>
+<p><span class="math display">\[
+\mathbf{E}^{\mathrm{dip}}(\mathbf{r})=-\frac{k^{2}}{\epsilon_{0}} \mathbf{q} G(\mathbf{r})-\nabla\left[\nabla \cdot \frac{\mathbf{q}}{\epsilon_{0}} G(\mathbf{r})\right]
+\]</span></p>
+<hr />
 <h2 id="note">NOTE</h2>
 <p>在 <code>hexo g</code> 后可以直接通过 <code>hexo d</code> 进行部署，而无需先 <code>hexo s</code>，该命令只是用于本地预览而已</p>
 <p>只有在部署到 GitHub Pages 的个人主页 https://username.github.io 上时，<code>../_config.yml</code> 中的<code>deploy</code> 的参数 <code>branch</code> 才为 <code>master</code>；如果你的网站不是放在该主页，而是放在子目录中如 https://username.github.io/academic 中时，需要先新建一个 <code>gh-pages</code> 的分支，并将 <code>deploy</code> 的参数改为 <code>branch: gh-pages</code>，然后在 repo 的设置中把 GitHub Pages 的发布分支选为 gh-pages</p>
 <p>此外，在子目录中的网站还需要在 <code>URL</code> 相关的参数中设置网站的 <code>url</code> 及 <code>root</code> 为</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url: http:&#x2F;&#x2F;yoursite.com&#x2F;academic&#x2F;</span><br><span class="line">root: &#x2F;academic&#x2F;</span><br></pre></td></tr></table></figure>
+<p>否则通过 <code>hexo d</code> 命令部署网站后，通过网址打开的网站只有文字，没有样式</p>
 
       
     </div>
